@@ -1,0 +1,263 @@
+.contenedor {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: rgba(0, 0, 0, 0.315);
+  z-index: 2;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.titulo {
+  color: white; /* Estilo de tu título */
+  z-index: 3; /* Coloca el título sobre el overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor {
+  margin-top: 5%;
+}
+
+.tamano {
+  height: 700px;
+}
+
+.descargarBtn {
+  background-color: #ffffff41; /* Color de fondo del botón (puedes cambiarlo) */
+  color: #ffffff; /* Color del texto del botón */
+  padding: 10px 20px; /* Espaciado interno (ajusta según sea necesario) */
+  border: none; /* Sin borde */
+  font-weight: 600;
+  border-radius: 4px; /* Borde redondeado */
+  font-size: 16px; /* Tamaño del texto (ajusta según sea necesario) */
+  text-decoration: none; /* Sin subrayado en el texto */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  display: inline-block;
+  margin-top: 10px; /* Espaciado superior (ajusta según sea necesario) */
+
+  /* Estilo para el hover */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+/* Cambia el color de fondo cuando el cursor está sobre el botón */
+.descargarBtn:hover {
+  background-color: #ffb300a9; /* Cambia el color de fondo al pasar el ratón */
+}
+
+.span {
+  color: white;
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 5px solid;
+  width: 5ch;
+
+  animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.span2 {
+  color: white;
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 5px solid;
+  width: 18ch;
+
+  animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.span3 {
+  color: white;
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 5px solid;
+  width: 15ch;
+
+  animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.arrows {
+  top: 70%;
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
+  background-color: #ffffff41;
+  border-radius: 40px;
+  cursor: pointer;
+  z-index: 4;  
+}
+
+.arrows path {
+  stroke: #ffffff;
+  cursor: pointer;
+  margin: 10px;
+  fill: transparent;
+  stroke-width: 3px;
+  z-index: 4;  
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+  animation-delay:-1s;
+  -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay:-0.5s;
+  -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 { 
+  animation-delay:0s;
+  -webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+.imagenContainer {
+  position: absolute;
+  top: 0; /* Ajusta la posición vertical según tus necesidades */
+  right: 10%; /* Coloca la imagen en el lado derecho de la pantalla */
+  width: 30%; /* Ancho de la imagen */
+  height: 100vh; /* Altura igual a la altura de la pantalla */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 4;
+}
+
+.circleMask {
+  width: 400px; /* Diámetro del círculo */
+  height: 400px; /* Diámetro del círculo */
+  background-color: #fff; /* Fondo opcional para el círculo */
+  border-radius: 50%; /* Aplica una máscara circular al elemento */
+  overflow: hidden; /* Oculta cualquier contenido fuera del círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: white solid 3px;
+  box-shadow: 0px 3px 8px 0px rgba(255,255,255,0.75);
+  animation: fadeIn 2.5s ease-in-out forwards;
+}
+
+.imagen {
+  max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+  max-height: 100%; /* Ajusta la altura máxima de la imagen */
+  border-radius: 50%; /* Asegura que la imagen también esté en formato circular */
+  opacity: 0; /* Establece la opacidad inicial en 0 */
+  animation: fadeIn 2.5s ease-in-out forwards; /* Nombre de la animación y duración */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1; /* Establece la opacidad final en 1 */
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .contenedor {
+    margin-top: 20%; /* Agrega el margen superior solo en dispositivos móviles */
+  }
+  .imagenContainer {
+    width: 50%; /* Ancho completo en dispositivos móviles */
+    height: 300px; /* Altura automática para adaptarse al contenido */
+    justify-content: center;
+    text-align: center;
+    top: 1%;
+    right: 5%;
+    margin-top: 5%; /* Margen superior en dispositivos móviles */
+  }
+
+  .circleMask {
+    width: 200px; /* Diámetro del círculo */
+    height: 200px; /* Diámetro del círculo */
+    background-color: #fff; /* Fondo opcional para el círculo */
+    border-radius: 50%; /* Aplica una máscara circular al elemento */
+    overflow: hidden; /* Oculta cualquier contenido fuera del círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: white solid 3px;
+    box-shadow: 0px 3px 8px 0px rgba(255,255,255,0.75);
+    animation: fadeIn 2.5s ease-in-out forwards;
+  }
+  .imagen {
+    max-width: 1100%; /* Ajusta el tamaño máximo de la imagen */
+    max-height: 100%; /* Ajusta la altura máxima de la imagen */
+    border-radius: 50%; /* Asegura que la imagen también esté en formato circular */
+    opacity: 0; /* Establece la opacidad inicial en 0 */
+    animation: fadeIn 2.5s ease-in-out forwards; /* Nombre de la animación y duración */
+  }
+}
