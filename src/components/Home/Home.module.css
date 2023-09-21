@@ -228,7 +228,8 @@
 
 @media screen and (max-width: 768px) {
   .contenedor {
-    margin-top: 20%; /* Agrega el margen superior solo en dispositivos móviles */
+    margin-top: 30%; /* Agrega el margen superior solo en dispositivos móviles */
+    padding-bottom: 30%;
   }
   .imagenContainer {
     width: 50%; /* Ancho completo en dispositivos móviles */
@@ -237,7 +238,7 @@
     text-align: center;
     top: 1%;
     right: 5%;
-    margin-top: 5%; /* Margen superior en dispositivos móviles */
+    margin-top: 10%; /* Margen superior en dispositivos móviles */
   }
 
   .circleMask {
@@ -259,5 +260,13 @@
     border-radius: 50%; /* Asegura que la imagen también esté en formato circular */
     opacity: 0; /* Establece la opacidad inicial en 0 */
     animation: fadeIn 2.5s ease-in-out forwards; /* Nombre de la animación y duración */
+  }
+  .span{
+    position: relative;
+    margin-top: 20%;
+  }
+
+  .arrows{
+    margin-top: 20%;
   }
 }

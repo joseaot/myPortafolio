@@ -1,3 +1,71 @@
 .contenedor{
-    background-color: white;
+    background-color: rgb(230, 230, 230);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.parrafo{
+    color: #231d1e;
+    margin-inline: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.titulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+    color: #231d1e;
+}
+
+
+.linea {
+    border: none; /* Quitamos el borde predeterminado */
+    border-top: 3px solid #231d1e; /* Agregamos un borde superior de 1 píxel y color deseado */
+    margin: 20px 0; /* Ajusta el margen superior e inferior según desees */
+    width: 80%; /* Asegura que ocupe todo el ancho disponible */
+    border-radius: 20px;
+}
+
+.contenedor2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 40px;
+}
+
+.imagen {
+    width: 300px;
+    animation: flotar 2s ease infinite; /* Animación de 2 segundos, se repite infinitamente */
+}
+
+@keyframes flotar {
+    0% {
+        transform: translateY(0); /* Comienza en su posición original */
+    }
+    50% {
+        transform: translateY(-10px); /* Sube 10 píxeles a la mitad de la animación */
+    }
+    100% {
+        transform: translateY(0); /* Vuelve a su posición original al final de la animación */
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .imagen {
+        width: 300px;
+    }
+
+    .contenedor2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-inline: 20px;
+    }
 }

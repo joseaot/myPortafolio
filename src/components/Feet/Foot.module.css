@@ -1,0 +1,24 @@
+.icono{
+    color: white;
+    height: 25px;
+    width: 25px;
+    transition: transform 0.2s ease; 
+}
+
+.icono:hover{
+    transform: scale(1.2);
+}
+
+.text{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: monospace;
+}
+
+
+@media screen and (max-width: 768px) {
+    .icono{
+        margin-left: 20px;
+    }
+}

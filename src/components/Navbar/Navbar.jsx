@@ -91,6 +91,14 @@ const Navbar = () => {
             Skills
           </a>
           <a
+            className={`nav-item nav-link ${activeLink === 'Proyectos' ? 'active' : ''}`}
+            href="#Proyectos"
+            style={activeLink === 'Proyectos' ? selectedLinkStyle : navLinkStyle}
+            onClick={() => handleLinkClick('Proyectos')}
+          >
+            Proyectos
+          </a>
+          <a
             className={`nav-item nav-link ${activeLink === 'Contactame' ? 'active' : ''}`}
             href="#"
             style={activeLink === 'Contactame' ? selectedLinkStyle : navLinkStyle}
