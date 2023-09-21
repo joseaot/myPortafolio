@@ -3,8 +3,8 @@ import equipo from "../../img/sobremi.png";
 
 const Sobremi = () => {
   return (
-    <div className={style.contenedor}>
-      <h1 id="Sobremi" className={style.titulo}>
+    <div className={style.contenedor} id="Sobremi">
+      <h1 className={style.titulo}>
         Sobre Mi
       </h1>
       <hr className={style.linea} />

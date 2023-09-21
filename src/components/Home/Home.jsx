@@ -26,7 +26,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className={style.contenedor}>
+    <div className={style.contenedor} id="Home">
       <div className={style.overlay}>
         <h1 className={style.span}>Hola,</h1>
         <h1 className={style.span2}>Soy Jose Orellana</h1>
