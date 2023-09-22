@@ -1,0 +1,35 @@
+.contenedor{
+    background-color: rgb(230, 230, 230);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+    color: #231d1e;
+}
+.linea {
+    border: none; /* Quitamos el borde predeterminado */
+    border-top: 3px solid #231d1e; /* Agregamos un borde superior de 1 píxel y color deseado */
+    margin: 20px 0; /* Ajusta el margen superior e inferior según desees */
+    width: 80%; /* Asegura que ocupe todo el ancho disponible */
+    border-radius: 20px;
+}
+
+.cardsContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media screen and (max-width: 768px) {
+    .cardsContainer {
+      display: flex;
+      flex-direction: column;
+
+    }
+}

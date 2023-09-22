@@ -1,0 +1,26 @@
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.verMasButton {
+    background-color: #ffffff41; /* Color de fondo del botón (puedes cambiarlo) */
+    color: #ffffff; /* Color del texto del botón */
+    padding: 5px 10px; /* Espaciado interno (ajusta según sea necesario) */
+    border: none; /* Sin borde */
+    font-weight: 600;
+    border-radius: 4px; /* Borde redondeado */
+    font-size: 16px; /* Tamaño del texto (ajusta según sea necesario) */
+    text-decoration: none; /* Sin subrayado en el texto */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    display: inline-block;
+    margin-top: 1px; /* Espaciado superior (ajusta según sea necesario) */
+  
+    /* Estilo para el hover */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+  
+.verMasButton:hover {
+    background-color: #ffb300a9; /* Cambia el color de fondo al pasar el ratón */
+}
