@@ -21,17 +21,136 @@
 }
 
 .formulario{
-    background-color:rgb(230, 230, 230);
+    background-color: #231d1e;
+    border: 2px;
+    border-radius: 20px;
+    box-shadow: 4px 5px 21px 14px rgba(255,179,0,1);
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .cajas{
     display: flex;
     flex-direction: column;
+    width: 400px;
+    height: 500px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .letras{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #231d1e;
+    color:rgb(230, 230, 230);
 }
 
 
+.inputContainer {
+    border: none;
+    border-bottom: 2px solid rgb(255, 179, 0); /* Establece el borde solo en la parte inferior */
+    color: white;
+  }
+  
+  /* Estilo para el input */
+  .inputContainer input[type="text"],
+  .inputContainer input[type="email"],
+  .inputContainer textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none; /* Elimina el borde predeterminado del input */
+    font-size: 16px;
+    background: transparent; /* Hace que el fondo del input sea transparente */
+    color: #fff; /* Cambia el color del texto a blanco */
+  }
+  
+  /* Estilo para el mensaje de error */
+  .inputContainer .error {
+    color: red;
+    font-size: 14px;
+  }
+  
+  /* Estilo para el botón */
+  .inputContainer .submitButton {
+
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .inputContainer .submitButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+.titulo2{
+    color:rgb(230, 230, 230);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.submitButton{
+    background-color: #ffffff41; /* Color de fondo del botón (puedes cambiarlo) */
+    color: #ffffff; /* Color del texto del botón */
+    padding: 5px 10px; /* Espaciado interno (ajusta según sea necesario) */
+    border: none; /* Sin borde */
+    font-weight: 600;
+    border-radius: 4px; /* Borde redondeado */
+    font-size: 16px; /* Tamaño del texto (ajusta según sea necesario) */
+    text-decoration: none; /* Sin subrayado en el texto */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    display: inline-block;
+    margin-top: 1px; /* Espaciado superior (ajusta según sea necesario) */
+  
+    /* Estilo para el hover */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+.submitButton:hover {
+    background-color: #ffb300a9; /* Cambia el color de fondo al pasar el ratón */
+}
+
+.confirmationMessage{
+    color:rgb(230, 230, 230);
+}
+
+.submitButton2{
+    background-color: #ffffff41; /* Color de fondo del botón (puedes cambiarlo) */
+    color: #ffffff; /* Color del texto del botón */
+    padding: 5px 10px; /* Espaciado interno (ajusta según sea necesario) */
+    border: none; /* Sin borde */
+    font-weight: 600;
+    border-radius: 4px; /* Borde redondeado */
+    font-size: 16px; /* Tamaño del texto (ajusta según sea necesario) */
+    text-decoration: none; /* Sin subrayado en el texto */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px; /* Espaciado superior (ajusta según sea necesario) */
+  
+    /* Estilo para el hover */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+.submitButton2:hover {
+    background-color: #ffb300a9; /* Cambia el color de fondo al pasar el ratón */
+}
+
+
+@media screen and (max-width: 768px) {
+    .titulo{
+        font-size: 60px;
+    }
+
+    .cajas{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 500px;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
