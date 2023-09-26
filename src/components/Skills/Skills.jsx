@@ -23,6 +23,7 @@ const Skills = () => {
     { id: 9, text: "Automotivación" },
     { id: 10, text: "Liderazgo" },
     { id: 11, text: "Pensamiento lógico" },
+    { id: 12, text: "Comunicador" },
   ];
 
   const tech = [

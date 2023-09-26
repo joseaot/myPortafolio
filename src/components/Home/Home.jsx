@@ -2,7 +2,7 @@ import { useCallback, useState, useEffect } from "react";
 import style from "./Home.module.css";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import cv from "../../img/cvProgramador.pdf";
+import cv from "../../img/Jose Orellana full stack.pdf";
 import perfil from "../../img/fotoperfil.jpg";
 
 const Home = () => {
